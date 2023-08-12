@@ -10,14 +10,23 @@
 
 int main(void)
 {
-	char c = 'A';
+	char c = 'a';
+	char ch = 'A';
 
-	while (c <= 'Z')
+	while (c <= 'z')
 	{
 		putchar(c);
 		c++;
 	}
+
+	while (ch <= 'Z')
+	{
+		putchar(ch);
+		ch++;
+	}
+
 	putchar('\n');
 
 	return (0);
 }
+
