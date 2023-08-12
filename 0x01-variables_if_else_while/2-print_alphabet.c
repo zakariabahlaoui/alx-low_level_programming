@@ -1,12 +1,11 @@
-#include <unistd.h>
+#include <stdio.h>
+
 /**
  * main - assign a random number to variable
  *
  * Description: print positive if n is positive if
- * negative ptint negative and if 0 ptint zwro
  *
  *  Return: return 0
- *
  */
 
 int main(void)
@@ -18,5 +17,7 @@ int main(void)
 		putchar(c);
 		c++;
 	}
+	putchar('\n');
+
 	return (0);
 }
