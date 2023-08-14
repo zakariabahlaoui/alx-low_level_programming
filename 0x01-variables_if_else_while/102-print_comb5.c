@@ -18,8 +18,6 @@ int main(void)
 		n2 = n + 1;
 		while (n2 <= 99)
 		{
-			// if (n == 1)
-			// 	n = 0;
 			putchar((n / 10) + '0');
 			putchar((n % 10) + '0');
 			putchar(' ');
