@@ -10,47 +10,32 @@
 
 int main(void)
 {
-    int n = '0';
-    int b;
-    int k;
-    int l;
+	int n = 0;
+	int n2;
 
-    while (n <= '9')
-    {
-        b = n;
-        while (b <= '9')
-        {
+	while (n <= 99)
+	{
+		n2 = n + 1;
+		while (n2 <= 99)
+		{
+			// if (n == 1)
+			// 	n = 0;
+			putchar((n / 10) + '0');
+			putchar((n % 10) + '0');
+			putchar(' ');
+			putchar((n2 / 10) + '0');
+			putchar((n2 % 10) + '0');
+			if (n != 98 && n != 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			n2++;
+		}
+		n++;
+	}
 
-            k = b;
-            while (k <= '9')
-            {
-
-                l = '0';
-                while (l <= '9')
-                {
-
-                    putchar(n);
-                    putchar(b);
-                    putchar(' ');
-                    putchar(k);
-                    putchar(l);
-                    if (n != '7')
-                    {
-                        putchar(',');
-                        putchar(' ');
-                    }
-                    l++;
-                }
-                k++;
-            }
-            b++;
-        }
-
-        n++;
-    }
-
-    putchar('\n');
-
-    return (0);
+	putchar('\n');
+	return (0);
 }
 
