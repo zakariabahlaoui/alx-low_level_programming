@@ -1,15 +1,21 @@
 #include "main.h"
 
 /**
- * main - print numbers
+ * print_alphabet - print alphabet
  *
- * Description: print cmob using putchar
+ * Description: print it character by character
  *
- *  Return: return 0
+ *  Return: is void
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+	_putchar('\n');
 }
