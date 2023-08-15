@@ -1,12 +1,15 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * main - print numbers
  *
- * Return: Always 0.
+ * Description: print cmob using putchar
+ *
+ *  Return: return 0
  */
+
 int main(void)
 {
-    print_alphabet();
-    return (0);
+	print_alphabet();
+	return (0);
 }
