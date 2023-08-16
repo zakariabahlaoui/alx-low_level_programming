@@ -13,9 +13,10 @@ void jack_bauer(void)
 	int min, hr;
 
 	hr = 0;
-	min = 0;
+
 	while (hr <= 23)
 	{
+		min = 0;
 		while (min <= 59)
 		{
 			_putchar((hr / 10) + '0');
@@ -28,4 +29,10 @@ void jack_bauer(void)
 		}
 		hr++;
 	}
+}
+
+int main(void)
+{
+	jack_bauer();
+	return (0);
 }
