@@ -13,6 +13,9 @@ int print_last_digit(int i)
 {
 	int r;
 
+	if (i == -2147483648)
+		i = 8;
+
 	if (i < 0)
 		i = i * (-1);
 
