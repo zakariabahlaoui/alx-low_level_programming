@@ -6,6 +6,7 @@
  * Description:  putchar time
  *
  *  Return:  is void
+ *
  */
 
 void jack_bauer(void)

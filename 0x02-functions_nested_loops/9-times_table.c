@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * imes_table - prin time
+ * times_table - prints the 9 times table, starting with 0
  *
- * Description:  putchar time
+ * Description: take a integir and multple it in lop
  *
  *  Return:  is void
  */
@@ -18,24 +18,28 @@ void times_table(void)
 	{
 		_putchar('0');
 		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
 		m = 0;
 		while (m < 9)
 		{
 			r += n;
 			if (r < 10)
-				_putchar(r + '0');
-			else if (r > 10)
 			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(r + '0');
+			}
+			else if (r > 9)
+			{
+				_putchar(' ');
 				_putchar((r / 10) + '0');
 				_putchar((r % 10) + '0');
 			}
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			if (m < 8)
+				_putchar(',');
+
 			m++;
 		}
+		r = 0;
 		_putchar('\n');
 		n++;
 	}
