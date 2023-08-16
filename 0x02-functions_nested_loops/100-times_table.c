@@ -44,7 +44,7 @@ void print_times_table(int n)
 				_putchar((r2 / 10) + '0');
 				_putchar((r2 % 10) + '0');
 			}
-			if (m < (n - 1) || n != 0)
+			if (m < (n - 1) && n != 0)
 				_putchar(',');
 		}
 		r = 0;
