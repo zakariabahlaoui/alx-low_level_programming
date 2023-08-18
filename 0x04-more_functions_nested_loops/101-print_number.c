@@ -34,9 +34,10 @@ void print_number(int n)
 		n = n / 10;
 		i++;
 	}
-}
-
-int main()
-{
-	print_number(45);
+	i--;
+	while (i >= 0)
+	{
+		_putchar(c[i]);
+		i--;
+	}
 }
