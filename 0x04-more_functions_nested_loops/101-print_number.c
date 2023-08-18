@@ -1,4 +1,4 @@
-#include "main.h.h"
+#include "main.h"
 
 /**
  * print_number - Function that prints an integer.
@@ -44,4 +44,3 @@ void print_number(int n)
 			m /= 10;
 		}
 	}
-}
