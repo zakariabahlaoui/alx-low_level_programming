@@ -13,8 +13,9 @@ void print_number(int n)
 
 	if (n == -2147483648)
 	{
-		_putchar('-214748364');
-		_putchar('8');
+		_putchar('-');
+		_putchar('2');
+		n = 147483648;
 	}
 
 	if (n < 0)
@@ -33,4 +34,9 @@ void print_number(int n)
 		n = n / 10;
 		i++;
 	}
+}
+
+int main()
+{
+	print_number(45);
 }
