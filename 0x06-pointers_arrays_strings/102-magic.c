@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - print a number 98
- *
- * Return: return 0
- */
-
 int main(void)
 {
 	int n;
