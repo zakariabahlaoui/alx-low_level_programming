@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * _strncpy -  copies a string
- * @dest: the first string
- * @src: the second to copy
- * @n: the number the charachter to copy
+ * _strcmp - compares two strings
+ * @s1: first string to compare
+ * @s2: second string to compare
  *
- * Return: return dest.
+ * Return: less than 0 if s1 is less than s2, 0 if they're equal,
+ * more than 0 if s1 is greater than s2
  */
 
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 	int i;
 	int j;
