@@ -10,34 +10,37 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j;
-	int count = 0;
-	char *str1, *str2;
+	int i, j, f, flag;
 
-	str1 = s;
-	str2 = accept;
+	f = 0;
 
-	i = 0;
-	while (str1[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		j = 0;
-		while (str2[j] != '\0')
+		flag = 0;
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (str2[j] == str1[i])
+			if (s[i] == accept[j])
 			{
-				count++;
-				break;
+				f++;
+				flag = 1;
 			}
-			j++;
-
-			if (s[i] != accept[j])
-			{
-				break;
-			}
-
-			i++;
 		}
-
-		return (count);
+		if (flag == 0)
+		{
+			return (f);
+		}
 	}
+
+	return (0);
+}
+
+int main(void)
+{
+	char *s = "hello, world";
+	char *f = "oleh";
+	unsigned int n;
+
+	n = _strspn(s, f);
+	printf("%u\n", n);
+	return (0);
 }
