@@ -22,6 +22,12 @@ char *_strdup(char *str)
 
 	strout = malloc(sizeof(char) * i + 1);
 
+	if (strout == NULL)
+	{
+		free(strout);
+		return (NULL);
+	}
+
 	i = 0;
 	while (str[i])
 	{
