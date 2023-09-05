@@ -14,10 +14,10 @@ char *create_array(unsigned int size, char c)
 	char *str;
 	unsigned int i;
 
+	str = malloc(sizeof(char) * size + 1);
+
 	if (size == 0)
 		str = NULL;
-
-	str = malloc(sizeof(char) * size + 1);
 
 	i = 0;
 	while (i <= size)
@@ -27,4 +27,20 @@ char *create_array(unsigned int size, char c)
 	}
 
 	return (str);
+}
+
+int main(void)
+{
+	char *buffer;
+	unsigned int size;
+
+	size = 0;
+	buffer = create_array(size, 'H');
+	if (buffer == NULL)
+	{
+		printf("failed to allocate memory\n");
+		return (1);
+	}
+	free(buffer);
+	return (0);
 }
